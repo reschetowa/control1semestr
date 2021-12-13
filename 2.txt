@@ -1,0 +1,21 @@
+const n = 4;
+var i, x: integer;
+var maximum, count: integer;
+begin
+     count := 0;
+    maximum := 1000;
+    for i:=1 to n do begin
+         read(x);
+         if x mod 4 = 0 then begin
+             count := count + 1;
+             if x < maximum then
+                 maximum := x; 
+            end;
+         end;
+     if count > 0 then begin 
+        writeln(count); 
+        writeln(maximum);
+    end 
+    else
+        writeln('NO');
+ end.

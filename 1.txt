@@ -1,0 +1,16 @@
+var N, digit, count: longint;
+ begin
+    readln(N);
+    count := 1;
+    while N > 0 do 
+    begin
+        digit := N mod 10;
+        if digit mod 5 = 0  then
+            count := count + digit;
+        N := N div 10;
+    end;
+    if count = 0 then
+        writeln('NO')
+    else
+        writeln(count)
+ end.
